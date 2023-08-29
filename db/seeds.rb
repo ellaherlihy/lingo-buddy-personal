@@ -23,7 +23,7 @@ end
 # bio = Faker::Lorem.paragraph(sentence_count: 15)
 
 html_doc.search(".styles_ReviewContent__-s6j4").each do |review|
-   reviews << review.text.strip
+  reviews << review.text.strip
 end
 
 # location = ['40 New Road London','338 Manor Road London', '12 Manor Road London', '4 Church Street
@@ -110,18 +110,18 @@ User.create(bio: bio.sample, languages: languages.sample, location: "Blake's Roa
 User.create(bio: bio.sample, languages: languages.sample, location: "Furley Road, Southwark, London", email: Faker::Internet.email, rate: 10, first_name: Faker::Name.male_first_name, last_name: Faker::Name.last_name, password: "123456", teacher: true, photo_url: "https://www.realmenrealstyle.com/wp-content/uploads/2021/06/man-20s-style.jpg")
 
 
-# #TEACHER SEEDS FOR DEMO BELOW
-# User.create(bio: bio, languages: "Spanish", location: "Evering Road, Hackney, London", email: Faker::Internet.email, rate: 10, first_name: Faker::Name.female_first_name, last_name: Faker::Name.last_name, password: "123456", teacher: true, photo_url: "https://static.onecms.io/wp-content/uploads/sites/20/2014/10/frances-mcdormand-1-435.jpg")
-# User.create(bio: bio, languages: "Spanish", location: "Mare Street, Hackney, London", email: Faker::Internet.email, rate: 8, first_name: Faker::Name.female_first_name, last_name: Faker::Name.last_name, password: "123456", teacher: true, photo_url: "https://i0.wp.com/images-prod.healthline.com/hlcmsresource/images/topic_centers/2020-7/Female_Portrait_1296x728-header.jpg?w=1155&h=1528")
-# User.create(bio: bio, languages: "Spanish", location: "Well Street, Hackney, London", email: Faker::Internet.email, rate: 6, first_name: Faker::Name.female_first_name, last_name: Faker::Name.last_name, password: "123456", teacher: true, photo_url: "https://img.freepik.com/free-photo/dreamy-young-woman-sunglasses-looking-front_197531-16739.jpg?w=2000")
-# User.create(bio: bio, languages: "Spanish", location: "Navarino Road, Hackney, London", email: Faker::Internet.email, rate: 12, first_name: Faker::Name.female_first_name, last_name: Faker::Name.last_name, password: "123456", teacher: true, photo_url: "https://static.onecms.io/wp-content/uploads/sites/23/2022/01/14/curly-girl-hair-2000.jpg")
-# User.create(bio: bio, languages: "Spanish", location: "Richmond Road, Hackney, London", email: Faker::Internet.email, rate: 9, first_name: Faker::Name.female_first_name, last_name: Faker::Name.last_name, password: "123456", teacher: true, photo_url: "https://media.istockphoto.com/photos/portrait-of-modern-black-woman-in-oxford-street-in-london-uk-picture-id1054835750?b=1&k=20&m=1054835750&s=170667a&w=0&h=SSPmHsCWIl-ESA4JdLoM7xeP0VYV-8rU0ffYtIUPcJ4=")
+#TEACHER SEEDS FOR DEMO BELOW
+User.create(bio: bio, languages: "Spanish", location: "Evering Road, Hackney, London", email: Faker::Internet.email, rate: 10, first_name: Faker::Name.female_first_name, last_name: Faker::Name.last_name, password: "123456", teacher: true, photo_url: "https://static.onecms.io/wp-content/uploads/sites/20/2014/10/frances-mcdormand-1-435.jpg")
+User.create(bio: bio, languages: "Spanish", location: "Mare Street, Hackney, London", email: Faker::Internet.email, rate: 8, first_name: Faker::Name.female_first_name, last_name: Faker::Name.last_name, password: "123456", teacher: true, photo_url: "https://i0.wp.com/images-prod.healthline.com/hlcmsresource/images/topic_centers/2020-7/Female_Portrait_1296x728-header.jpg?w=1155&h=1528")
+User.create(bio: bio, languages: "Spanish", location: "Well Street, Hackney, London", email: Faker::Internet.email, rate: 6, first_name: Faker::Name.female_first_name, last_name: Faker::Name.last_name, password: "123456", teacher: true, photo_url: "https://img.freepik.com/free-photo/dreamy-young-woman-sunglasses-looking-front_197531-16739.jpg?w=2000")
+User.create(bio: bio, languages: "Spanish", location: "Navarino Road, Hackney, London", email: Faker::Internet.email, rate: 12, first_name: Faker::Name.female_first_name, last_name: Faker::Name.last_name, password: "123456", teacher: true, photo_url: "https://static.onecms.io/wp-content/uploads/sites/23/2022/01/14/curly-girl-hair-2000.jpg")
+User.create(bio: bio, languages: "Spanish", location: "Richmond Road, Hackney, London", email: Faker::Internet.email, rate: 9, first_name: Faker::Name.female_first_name, last_name: Faker::Name.last_name, password: "123456", teacher: true, photo_url: "https://media.istockphoto.com/photos/portrait-of-modern-black-woman-in-oxford-street-in-london-uk-picture-id1054835750?b=1&k=20&m=1054835750&s=170667a&w=0&h=SSPmHsCWIl-ESA4JdLoM7xeP0VYV-8rU0ffYtIUPcJ4=")
 
-# User.create(bio: bio, languages: "Spanish", location: "Brenthouse Road, Hackney, London", email: Faker::Internet.email, rate: 10, first_name: Faker::Name.male_first_name, last_name: Faker::Name.last_name, password: "123456", teacher: true, photo_url: "http://d17zbv0kd7tyek.cloudfront.net/wp-content/uploads/2015/06/leonardo-dicaprio-fb.jpg")
-# User.csreate(bio: bio, languages: "Spanish", location: "Retreat Place, Hackney, London", email: Faker::Internet.email, rate: 11, first_name: Faker::Name.male_first_name, last_name: Faker::Name.last_name, password: "123456", teacher: true, photo_url: "https://us.123rf.com/450wm/dglimages/dglimages1807/dglimages180700174/105059079-front-view-of-a-young-male-adult-looking-and-smiling-at-the-camera-while-he-gets-a-portrait-taken-.jpg?ver=6")
-# User.create(bio: bio, languages: "Spanish", location: "Albion Drive, Hackney, London", email: Faker::Internet.email, rate: 7, first_name: Faker::Name.male_first_name, last_name: Faker::Name.last_name, password: "123456", teacher: true, photo_url: "https://t4.ftcdn.net/jpg/03/03/11/97/360_F_303119721_EabYowCVsPMkCo7UMSGWx4Z2AvNkR7bV.jpg")
+User.create(bio: bio, languages: "Spanish", location: "Brenthouse Road, Hackney, London", email: Faker::Internet.email, rate: 10, first_name: Faker::Name.male_first_name, last_name: Faker::Name.last_name, password: "123456", teacher: true, photo_url: "http://d17zbv0kd7tyek.cloudfront.net/wp-content/uploads/2015/06/leonardo-dicaprio-fb.jpg")
+User.csreate(bio: bio, languages: "Spanish", location: "Retreat Place, Hackney, London", email: Faker::Internet.email, rate: 11, first_name: Faker::Name.male_first_name, last_name: Faker::Name.last_name, password: "123456", teacher: true, photo_url: "https://us.123rf.com/450wm/dglimages/dglimages1807/dglimages180700174/105059079-front-view-of-a-young-male-adult-looking-and-smiling-at-the-camera-while-he-gets-a-portrait-taken-.jpg?ver=6")
+User.create(bio: bio, languages: "Spanish", location: "Albion Drive, Hackney, London", email: Faker::Internet.email, rate: 7, first_name: Faker::Name.male_first_name, last_name: Faker::Name.last_name, password: "123456", teacher: true, photo_url: "https://t4.ftcdn.net/jpg/03/03/11/97/360_F_303119721_EabYowCVsPMkCo7UMSGWx4Z2AvNkR7bV.jpg")
 
-#HERO TEACHER SEED FOR DEMO BELOW #33
+HERO TEACHER SEED FOR DEMO BELOW #33
 User.create(bio: "Hola! My name is Andres and I have been on LingoBuddy for 3 years. I love meeting new people and helping them learn Spanish. I live in East London and my day job is being a web developer. If you would like to meet up send me a booking request and we can chat!", languages: "Spanish", location: "Bowrons Avenue, Wembley, London", email: "teacher@email.com", rate: 5, first_name: "Andres", last_name: "Garcia", password: "123456", teacher: true, photo_url: "https://media.istockphoto.com/photos/portrait-of-young-man-in-yellow-tshirt-at-backyard-picture-id1180616266?b=1&k=20&m=1180616266&s=170667a&w=0&h=cMM4OlorRa8ONFxDBQHmAus9H-LkhJ2TDH2px2Hr3M8=")
 
 # REVIEW SEEDS BELOW
@@ -136,12 +136,12 @@ Review.create!(name: Faker::Name.name, content: "Very friendly, and motivated, I
   Review.create!(name: Faker::Name.name, content: reviews.sample, rating: 4, user_id: User.all.sample.id)
 end
 
-# 5.times do
-#   Review.create!(name: Faker::Name.name, content: reviews.sample, rating: rand(3..5), user_id: User.first.id)
-# end
+5.times do
+  Review.create!(name: Faker::Name.name, content: reviews.sample, rating: rand(3..5), user_id: User.first.id)
+end
 
-# 4.times do
-#   Review.create!(content: bio, rating: 5, user_id: 33)
-# end
+4.times do
+  Review.create!(content: bio, rating: 5, user_id: 33)
+end
 
 puts "Finished!"
