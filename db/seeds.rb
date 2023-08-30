@@ -109,8 +109,7 @@ User.create(bio: bio.sample, languages: "Hindi", location: "Trent Road, Lambeth,
 User.create(bio: bio.sample, languages: languages.sample, location: "Blake's Road, Southwark, London", email: Faker::Internet.email, rate: 10, first_name: Faker::Name.male_first_name, last_name: Faker::Name.last_name, password: "123456", teacher: true, photo_url: "https://i.pinimg.com/736x/f4/80/a8/f480a84bc0836f4b68cb9f8028343c83--rasta-tattoo-dreadlocks.jpg")
 User.create(bio: bio.sample, languages: languages.sample, location: "Furley Road, Southwark, London", email: Faker::Internet.email, rate: 10, first_name: Faker::Name.male_first_name, last_name: Faker::Name.last_name, password: "123456", teacher: true, photo_url: "https://www.realmenrealstyle.com/wp-content/uploads/2021/06/man-20s-style.jpg")
 
-
-#TEACHER SEEDS FOR DEMO BELOW
+# TEACHER SEEDS FOR DEMO BELOW
 User.create(bio: bio, languages: "Spanish", location: "Evering Road, Hackney, London", email: Faker::Internet.email, rate: 10, first_name: Faker::Name.female_first_name, last_name: Faker::Name.last_name, password: "123456", teacher: true, photo_url: "https://static.onecms.io/wp-content/uploads/sites/20/2014/10/frances-mcdormand-1-435.jpg")
 User.create(bio: bio, languages: "Spanish", location: "Mare Street, Hackney, London", email: Faker::Internet.email, rate: 8, first_name: Faker::Name.female_first_name, last_name: Faker::Name.last_name, password: "123456", teacher: true, photo_url: "https://i0.wp.com/images-prod.healthline.com/hlcmsresource/images/topic_centers/2020-7/Female_Portrait_1296x728-header.jpg?w=1155&h=1528")
 User.create(bio: bio, languages: "Spanish", location: "Well Street, Hackney, London", email: Faker::Internet.email, rate: 6, first_name: Faker::Name.female_first_name, last_name: Faker::Name.last_name, password: "123456", teacher: true, photo_url: "https://img.freepik.com/free-photo/dreamy-young-woman-sunglasses-looking-front_197531-16739.jpg?w=2000")
@@ -121,10 +120,10 @@ User.create(bio: bio, languages: "Spanish", location: "Brenthouse Road, Hackney,
 User.create(bio: bio, languages: "Spanish", location: "Retreat Place, Hackney, London", email: Faker::Internet.email, rate: 11, first_name: Faker::Name.male_first_name, last_name: Faker::Name.last_name, password: "123456", teacher: true, photo_url: "https://us.123rf.com/450wm/dglimages/dglimages1807/dglimages180700174/105059079-front-view-of-a-young-male-adult-looking-and-smiling-at-the-camera-while-he-gets-a-portrait-taken-.jpg?ver=6")
 User.create(bio: bio, languages: "Spanish", location: "Albion Drive, Hackney, London", email: Faker::Internet.email, rate: 7, first_name: Faker::Name.male_first_name, last_name: Faker::Name.last_name, password: "123456", teacher: true, photo_url: "https://t4.ftcdn.net/jpg/03/03/11/97/360_F_303119721_EabYowCVsPMkCo7UMSGWx4Z2AvNkR7bV.jpg")
 
-HERO TEACHER SEED FOR DEMO BELOW #33
+# HERO TEACHER SEED FOR DEMO BELOW
 User.create(bio: "Hola! My name is Andres and I have been on LingoBuddy for 3 years. I love meeting new people and helping them learn Spanish. I live in East London and my day job is being a web developer. If you would like to meet up send me a booking request and we can chat!", languages: "Spanish", location: "Bowrons Avenue, Wembley, London", email: "teacher@email.com", rate: 5, first_name: "Andres", last_name: "Garcia", password: "123456", teacher: true, photo_url: "https://media.istockphoto.com/photos/portrait-of-young-man-in-yellow-tshirt-at-backyard-picture-id1180616266?b=1&k=20&m=1180616266&s=170667a&w=0&h=cMM4OlorRa8ONFxDBQHmAus9H-LkhJ2TDH2px2Hr3M8=")
 
-# REVIEW SEEDS BELOW
+# REVIEW: SEEDS BELOW
 Review.create!(name: Faker::Name.name, content: "I'm improving my Spanish with the help of Chayan. He puts me at ease to make me talk and so without realising it I get better and better. He is a very smart, funny and lovley person. Super recommended! ;)", rating: 5, user_id: User.first.id)
 Review.create!(name: Faker::Name.name, content: "Chayan is an excellent teacher. I am learning a lot with him!", rating: 5, user_id: User.first.id)
 Review.create!(name: Faker::Name.name, content: "Chayan is a really patient teacher. He tutors my nephew and he gives a great effort to engage him with the lessons. He uses different materials and methods to make the lessons more fun for him. Thanks Chayan.", rating: 5, user_id: User.first.id)
