@@ -189,6 +189,68 @@ h2  {
 }
 
 
-.home-card{
+.home-card {
   opacity: 0.9 !important;
 }
+
+@media (min-width: 100px) and (max-width: 768px) {
+
+    #explorebtn {
+    width: 10rem;
+    font-size: 1rem;
+    margin: 0;
+    align-self: center;
+    }
+
+    .container > h1 {
+    font-size: 2rem;
+    text-align: center;
+    }
+
+    h3 {
+    font-size: 1rem;
+    }
+
+    .card-how-it-works {
+    margin: 0.5rem 0 0 0 !important;
+    padding: 0 0 0 0;
+    // width: 300px;
+    padding: 0 !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+    .container {
+    width: 300px;
+    margin: 0;
+    padding: 0;
+    }
+
+    .card-body {
+      padding: 0;
+      margin:0;
+      width: 300px;
+    }
+
+    .home-card {
+      margin: 0 !important;
+      width: 300px !important;
+      padding: 0;
+    }
+
+    .card-product .card-product-infos {
+      padding: 0;
+      margin: 0;
+    }
+
+    .card .home-card {
+      // width: 200px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container-how-it-works {
+      padding: 0 0 1rem 0;
+    }
+  }

@@ -8,6 +8,7 @@
   top: 0;
   left: 0;
   right: 0;
+  width: 100%;
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -80,4 +81,40 @@ h3{
 #logo1 {
  margin-left: 3px;
  opacity: 1;
+}
+
+@media (min-width: 100px) and (max-width: 768px) {
+  .container-reviews {
+    display: none;
+  }
+
+  .explorebtn {
+    width: 100px;
+  }
+
+  .navbar-lewagon {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  #search {
+    display: none;
+  }
+
+  .search-btn {
+    display: none;
+  }
+
+  #logo1 {
+    display: none;
+  }
+
+  .dropdown-content {
+    display: none;
+  }
+
+  .navbar-toggler {
+    display: none;
+  }
 }
