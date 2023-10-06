@@ -1,4 +1,5 @@
 class UsersController < ApplicationController
+  skip_before_action :authenticate_user!
   def index
     # The `geocoded` scope filters only flats with coordinates
     ## working search

@@ -83,7 +83,7 @@ h3{
  opacity: 1;
 }
 
-@media (min-width: 100px) and (max-width: 768px) {
+@media (min-width: 100px) and (max-width: 900px) {
   .container-reviews {
     display: none;
   }
@@ -98,6 +98,10 @@ h3{
     padding: 0;
   }
 
+  h3 {
+    font-size: 0.5rem;
+  }
+
   #search {
     display: none;
   }
@@ -107,7 +111,10 @@ h3{
   }
 
   #logo1 {
-    display: none;
+    width: 3rem;
+    height: auto;
+    padding: 0 .5rem 0 0;
+    margin: 0;
   }
 
   .dropdown-content {
